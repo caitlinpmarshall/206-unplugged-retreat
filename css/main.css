@@ -89,63 +89,79 @@ textarea {
 
 /* ------------ MOBILE base styles -------------*/
 
+
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+/* ------------ MOBILE header & footer styles: universal across pages -------------*/
 header,
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
 }
 
-/* ------------ MOBILE header styles -------------*/
+header {
+  padding: 15px 0;
+}
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+  width: 100%;
 }
 
+header a {
+  padding: 10px 0;
+}
 .header-divider {
+  width: 100%;
+  border: 1px solid #999;
 
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-nav ul {
+header nav {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
 }
 
-nav ul li {}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+nav ul li {
+  list-style-type: none;
+}
 
 nav ul li a {}
 
-/* ------------ MOBILE footer styles -------------*/
-
+footer {
+  flex-direction: column;
+}
 
 footer .content-wrapper {
-
+  width: 55%;
 }
 
 .footer-content {
 
 }
 
-.footer .contact {
+footer .contact {
+  margin-bottom: 50px;
 
-}
-
-footer .social p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 footer .social-icons {
@@ -155,18 +171,28 @@ footer .social-icons {
   flex-flow: row wrap;
 }
 
-.copyright {
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .copyright {
+  margin: 20px 0;
 
 }
 
 /* ------------ MOBILE main styles - homepage -------------*/
-main {}
 
 /* hero area */
 
 .hero-area {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-flow: row wrap;
 }
 
@@ -192,6 +218,7 @@ aside .form-description {
 }
 
 aside .form {
+  margin: 20px 0;
 
 }
 
@@ -203,8 +230,15 @@ aside .form {
   flex-flow: row wrap;
 }
 
-.features .content-wrapper {
+.features h2 {
+  margin-bottom: 60px;
+}
 
+.features article {
+  border: 1px solid #000;
+  width: 63%;
+  margin: 15px 0; /* differs */
+  text-align: center; /* differs */
 }
 
 .features .features-items {
@@ -212,11 +246,22 @@ aside .form {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+
 }
 
-.fontawesome-icon {}
+.fontawesome-icon {
+  padding: 10px 0;
 
-.features-items-desc {}
+}
+
+.features-items-desc {
+  padding: 10px 0;
+
+}
+
+.features p {
+  margin: 0;
+}
 
 /* reviews */
 
@@ -228,6 +273,15 @@ aside .form {
 
 .reviews .content-wrapper {
 
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 50%;
+  margin: 20px 0;
 }
 
 
@@ -251,14 +305,16 @@ aside .form {
 
 .contact-section {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
 .contact-section .content-wrapper {}
 
-.contact-content {}
+.contact-content p {
+  margin: 0;
+}
 
 
 /* ------------ MOBILE main styles - faq page -------------*/
@@ -270,13 +326,20 @@ aside .form {
 }
 
 .faq .content-wrapper {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.faq-content {}
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+}
 
 .faq-content .question {}
 
