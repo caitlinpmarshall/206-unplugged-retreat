@@ -115,21 +115,23 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
-  width: 100%;
 }
 
 header a {
   padding: 10px 0;
 }
+
 .header-divider {
   width: 100%;
-  border: 1px solid #999;
+  height: 1px;
+  background: #999;
+  margin: 10px 0 20px 0;
 
 }
 
 header nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
@@ -153,6 +155,7 @@ footer {
 
 footer .content-wrapper {
   width: 55%;
+  margin: 50px 0;
 }
 
 .footer-content {
@@ -168,7 +171,6 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-flow: row wrap;
 }
 
 footer .social-icons p {
@@ -249,12 +251,12 @@ aside .form {
 
 }
 
-.fontawesome-icon {
+.fontawesome-icon { /* differs */
   padding: 10px 0;
 
 }
 
-.features-items-desc {
+.features-items-desc { /* differs */
   padding: 10px 0;
 
 }
@@ -280,7 +282,7 @@ aside .form {
 }
 
 .reviews h3 {
-  width: 50%;
+  width: 55%;
   margin: 20px 0;
 }
 
@@ -431,17 +433,203 @@ aside .form {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+@media only screen and (min-width: 768px) {
+  /* tablet styles */
+  body {
+    background: cornsilk;
+  }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
 
+  /* ------------ TABLET header & footer styles: universal across pages -------------*/
+
+  
+  /* Header */
+  header {
+    border: 1px solid #000;
+    justify-content: space-around;
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    border: 1px solid #000;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    border: 1px solid #000;
+    width: 20%;
+  }
+
+  header nav ul {
+    border: 1px solid #000;
+    justify-content: space-between;
+  }
+
+  header nav ul li {
+    border: 1px solid #000;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* Hero Area */
+  .hero-area {
+    border: 1px solid #000;
+  }
+
+  .hero-area .content-wrapper {
+    border: 1px solid #000;
+  }
+
+  .hero-area .content-wrapper h1 {
+    width: 75%;
+  }
+  /* Aside */
+  aside .content-wrapper {
+    border: 1px solid #000;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {   
+      border: 1px solid #000;     
+      width: 40%;        
+      margin: 0;
+  }
+
+  /* Features */
+
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 170px;
+    margin: 50px;
+    height: 180px;
+
+  }
+
+  .features .features-item-description {
+      width: 50%;
+  }
+
+  /* Reviews */
+  .reviews article {
+    border: 1px solid #000;
+
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .reviews article div {
+    border: 1px solid #000;
+
+    width: 49%;     
+  }
+
+  /* Footer */
+  footer .content-wrapper {
+    border: 1px solid #000;
+      width: 65%;
+      margin: 100px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* differs */
+
+  }
+
+  footer .contact, footer .social {
+    border: 1px solid #000;
+
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  footer .copyright {
+    width: 100%; /* differs */
+    text-align: center;
+  }
+
+
+  /* ------------ TABLET main styles - about page -------------*/
+  .mission-content {
+    border: 1px solid #000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .mission-content p {
+    border: 1px solid #000;
+
+    width: 45%;
+    
+  }
+
+  .contact-section .content-wrapper h2 {
+    border: 1px solid #000;
+    
+    width: 85%;
+  }
+
+  .contact-content {
+    border: 1px solid #000;
+
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  /* ------------ TABLET main styles - faq page -------------*/
+  .faq .content-wrapper { /* differs */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .faq .content-wrapper h2 { /* differs */
+    border: 1px solid #000;
+    margin: 15px 0;
+  }
+
+  
+  .faq-content { /* differs */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    margin: 0;
+    border-top: 1px solid #000;
+  }
+
+  .faq-content article { /* differs */
+    width: 45%;
+  }
+
+} /* ------ end of TABLET media query ------ */
+
+@media only screen and (min-width: 1200px) {
+  /* desktop styles */
+  body {
+    background: paleturquoise;
+  }
+} /* ------ end of DESKTOP media query ------ */
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
