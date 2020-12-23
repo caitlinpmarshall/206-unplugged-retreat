@@ -184,8 +184,9 @@ footer p {
 }
 
 footer .copyright {
+  width: 100%; /* differs */
+  text-align: center;
   margin: 20px 0;
-
 }
 
 /* ------------ MOBILE main styles - homepage -------------*/
@@ -478,6 +479,30 @@ aside .form {
     display: none;
   }
 
+  /* Footer */
+  footer .content-wrapper {
+    border: 1px solid #000;
+      width: 65%;
+      margin: 100px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* differs */
+
+  }
+
+  footer .contact, footer .social {
+    border: 1px solid #000;
+
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  /* ------------ TABLET main styles - homepage -------------*/
+
+
   /* Hero Area */
   .hero-area {
     border: 1px solid #000;
@@ -538,31 +563,7 @@ aside .form {
     width: 49%;     
   }
 
-  /* Footer */
-  footer .content-wrapper {
-    border: 1px solid #000;
-      width: 65%;
-      margin: 100px 0;
-  }
 
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* differs */
-
-  }
-
-  footer .contact, footer .social {
-    border: 1px solid #000;
-
-    margin-bottom: 0;
-    text-align: center;
-  }
-  
-  footer .copyright {
-    width: 100%; /* differs */
-    text-align: center;
-  }
 
 
   /* ------------ TABLET main styles - about page -------------*/
@@ -629,6 +630,76 @@ aside .form {
   body {
     background: paleturquoise;
   }
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* ------------ DESKTOP main styles - homepage -------------*/
+
+  /* Hero Area */
+  
+  .hero-area .content-wrapper h1 {
+    border: 3px solid #000;
+
+    width: 60%;
+
+  }
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  
+  }
+
+  /* Features */
+  .features .content-wrapper {
+    border: 1px solid #000;
+  }
+
+  .features-items {
+    border: 1px solid #000;
+  }
+
+  .features h2 {
+    width: 90%
+  }
+
+  .features-items article { /* differs */
+    border: 2px solid #000;
+    flex-basis: 175px;
+    margin: 30px 65px; /*this seems it should be achieved w flex, not margins */
+  }
+
+  
+  /* Reviews */
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* ------------ DESKTOP main styles - about page -------------*/
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    border: 3px solid #000;
+    width: 95%;
+  }
+
+  /* ------------ DESKTOP main styles - faq page -------------*/
+  .faq-content { /* differs */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    margin: 0;
+    border-top: none;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+  
+
 } /* ------ end of DESKTOP media query ------ */
 /* ==========================================================================
    Print styles.
