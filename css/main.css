@@ -307,7 +307,7 @@ input[type=button] {
 }
 
 .features article {
-  border: 1px solid #000;
+  px solid #000;
   width: 63%;
   margin: 15px 0; /* differs */
   text-align: center; /* differs */
@@ -519,29 +519,24 @@ input[type=button] {
   
   /* Header */
   header {
-    border: 1px solid #000;
     justify-content: space-around;
     padding: 33px 0;
   }
 
   header .content-wrapper {
-    border: 1px solid #000;
     width: 100%;
     justify-content: space-between;
   }
 
   header nav {
-    border: 1px solid #000;
     width: 20%;
   }
 
   header nav ul {
-    border: 1px solid #000;
     justify-content: space-between;
   }
 
   header nav ul li {
-    border: 1px solid #000;
   }
 
   .header-divider {
@@ -550,7 +545,6 @@ input[type=button] {
 
   /* Footer */
   footer .content-wrapper {
-    border: 1px solid #000;
       width: 65%;
       margin: 100px 0;
   }
@@ -563,8 +557,6 @@ input[type=button] {
   }
 
   footer .contact, footer .social {
-    border: 1px solid #000;
-
     margin-bottom: 0;
     text-align: center;
   }
@@ -574,11 +566,9 @@ input[type=button] {
 
   /* Hero Area */
   .hero-area {
-    border: 1px solid #000;
   }
 
   .hero-area .content-wrapper {
-    border: 1px solid #000;
   }
 
   .hero-area .content-wrapper h1 {
@@ -586,7 +576,6 @@ input[type=button] {
   }
   /* Aside */
   aside .content-wrapper {
-    border: 1px solid #000;
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
@@ -595,7 +584,6 @@ input[type=button] {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {   
-      border: 1px solid #000;     
       width: 40%;        
       margin: 0;
   }
@@ -619,16 +607,12 @@ input[type=button] {
 
   /* Reviews */
   .reviews article {
-    border: 1px solid #000;
-
     display: flex;
     justify-content: space-between;
 
   }
 
   .reviews article div {
-    border: 1px solid #000;
-
     width: 49%;     
   }
 
@@ -637,8 +621,6 @@ input[type=button] {
 
   /* ------------ TABLET main styles - about page -------------*/
   .mission-content {
-    border: 1px solid #000;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -646,21 +628,15 @@ input[type=button] {
   }
 
   .mission-content p {
-    border: 1px solid #000;
-
     width: 45%;
 
   }
 
   .contact-section .content-wrapper h2 {
-    border: 1px solid #000;
-    
     width: 85%;
   }
 
   .contact-content {
-    border: 1px solid #000;
-
     display: flex;
     justify-content: space-between;
     
@@ -674,7 +650,6 @@ input[type=button] {
   }
 
   .faq .content-wrapper h2 { /* differs */
-    border: 1px solid #000;
     margin: 15px 0;
   }
 
@@ -720,11 +695,9 @@ input[type=button] {
 
   /* Features */
   .features .content-wrapper {
-    border: 1px solid #000;
   }
 
   .features-items {
-    border: 1px solid #000;
   }
 
   .features h2 {
@@ -732,7 +705,6 @@ input[type=button] {
   }
 
   .features-items article { /* differs */
-    border: 2px solid #000;
     flex-basis: 175px;
     margin: 30px 65px; /*this seems it should be achieved w flex, not margins */
   }
