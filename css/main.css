@@ -717,6 +717,10 @@ input[type=button] {
 
   }
 
+  .map-container figure {
+    padding-bottom: 46%
+  }
+
   .contact-section .content-wrapper h2 {
     width: 85%;
   }
@@ -816,6 +820,10 @@ input[type=button] {
   .contact-section .content-wrapper h2 {
     border: 3px solid #000;
     width: 95%;
+  }
+
+  .map-container figure {
+    padding-bottom: 37%
   }
 
   /* ------------ DESKTOP main styles - faq page -------------*/
