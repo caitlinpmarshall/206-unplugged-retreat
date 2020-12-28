@@ -405,7 +405,22 @@ input[type=button] {
 
 .mission-content {}
 
-.map {}
+.map-container figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.map-container iframe {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .contact-section {
   display: flex;
