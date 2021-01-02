@@ -113,7 +113,8 @@ a {
 
 h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 2.25em;
+  font-size: 1.875em;
+  line-height: 1.2em;
   font-weight: 500;
   margin: 0;
 }
@@ -121,13 +122,13 @@ h2 {
 h3, h4 {
   font-family: "Poppins", sans-serif;
   margin: 20px 0;
-  font-size: 1.5em;
+  font-size: 1.125em;
   font-weight: 500;
 }
 
 p {
-  font-size: 1em;
-  line-height: 1.285em;
+  font-size: .875em;
+  line-height: 1.35em;
 }
 
 img {
@@ -190,7 +191,7 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 50%;
+  width: 40%;
 }
 
 header nav ul {
@@ -214,6 +215,10 @@ footer {
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
+}
+
+footer h3 {
+  margin: 0 0 20px 0;
 }
 
 footer p {
@@ -251,7 +256,7 @@ footer .social-icons i {
 footer .copyright {
   width: 100%; /* differs */
   text-align: center;
-  margin: 20px 0;
+  margin: 0 0 20px 0;
 }
 
 /* ------------ MOBILE main styles - homepage -------------*/
@@ -286,10 +291,11 @@ aside {
   background: #527158;
 }
 
-aside .content-wrapper { /* differs */
+aside .content-wrapper {
   margin-top: 0;
   margin-bottom: 50px;
 }
+
 
 aside .form {
   margin-top: 30px;
@@ -332,7 +338,8 @@ input[type=button] {
 }
 
 .features p {
-  margin: 0;
+  margin: auto;
+  max-width: 200px;
 }
 
 .features article {
@@ -349,7 +356,7 @@ input[type=button] {
 }
 
 .features i { /* differs */
-  font-size: 3.75em;
+  font-size: 4.5em;
   margin: 30px 0;
 
 }
@@ -365,12 +372,16 @@ input[type=button] {
 }
 
 .reviews h2 {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
+}
+
+.reviews p {
+  margin: 0;
 }
 
 
@@ -381,7 +392,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background: #527158;
+  background-color: #527158;
 
 }
 
@@ -389,8 +400,9 @@ input[type=button] {
   width: 100%;
   height: 0;
   padding-bottom: 125%;
-  position: relative;
   overflow: hidden;
+  position: relative;
+
 
 }
 
@@ -407,7 +419,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background: #2a423a;
+  background-color: #2a423a;
 }
 
 .contact-content p {
@@ -434,11 +446,7 @@ input[type=button] {
 }
 
 .faq h2 {
-  margin-bottom: 40px;
-}
-
-.faq-content {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 /* ==========================================================================
@@ -553,7 +561,7 @@ input[type=button] {
   /* Header */
   header {
     justify-content: center;
-    padding: 15px 0;
+    padding: 30px 0;
   }
 
   header .content-wrapper {
@@ -606,7 +614,6 @@ input[type=button] {
     width: 45%;
   }
 
-
   footer .social-icons {
     display: flex;
     justify-content: space-between;
@@ -643,6 +650,7 @@ input[type=button] {
   }
 
   aside h3 {
+    margin-top: 0;
     margin-bottom: 10px;
   }
 
@@ -653,10 +661,12 @@ input[type=button] {
 
   .features article {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-flow: column wrap;
-    flex-basis: 50%;  }
+    flex-basis: 50%;
+    height: 200px;
+  }
 
   .features p {
     max-width: 62%;
@@ -705,11 +715,11 @@ input[type=button] {
   }
 
   .map-container figure {
-    padding-bottom: 46%
+    padding-bottom: 45.5%
   }
 
   .contact-section .content-wrapper h2 {
-    width: 85%;
+    width: 80%;
   }
 
   .contact-content {
@@ -719,15 +729,19 @@ input[type=button] {
     
   }
 
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
   /* ------------ TABLET main styles - faq page -------------*/
   .faq .content-wrapper { /* differs */
     display: flex;
     justify-content: left;
     align-items: center;
+    margin: 100px 0;
   }
 
   .faq .content-wrapper h2 { /* differs */
-    margin: 15px 0;
     width: 100%;
   }
   
@@ -737,16 +751,15 @@ input[type=button] {
     align-items: flex-start;
     flex-flow: row wrap;
     margin: 0;
-    border-top: 1px solid #fff;
+    border-top: none;
   }
 
   .faq-content article { /* differs */
     flex-basis: 48%;
   }
 
-  .faq h4,
-  .faq p {
-      font-size: 1em;
+  .faq h4 {
+      font-size: .875em;
       line-height: 1.125;
   }
 
@@ -789,6 +802,10 @@ input[type=button] {
 
 
   /* Hero Area */
+  .hero-area .content-wrapper {
+    margin: 50px 0;
+  }
+
   .hero-area .content-wrapper h1 {
     font-size: 3.75em;
     width: 80%;
@@ -815,6 +832,7 @@ input[type=button] {
 
   .features-items article { /* differs */
     flex-basis: 33%;
+    height: auto;
   }
   
   /* Reviews */
@@ -824,19 +842,18 @@ input[type=button] {
   }
 
   .reviews h2 {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 
   /* ------------ DESKTOP main styles - about page -------------*/
+  .map-container figure {
+    padding-bottom: 37.5%
+  }
 
   .mission h2,
   .contact-section .content-wrapper h2 {
-    width: 95%;
+    width: 100%;
     font-size: 3em;
-  }
-
-  .map-container figure {
-    padding-bottom: 37.5%
   }
 
   .contact-content h4 {
@@ -861,7 +878,6 @@ input[type=button] {
   .faq h4,
   .faq p {
       font-size: 1.125em;
-      line-height: 1;
   }
   
 
