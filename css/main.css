@@ -344,8 +344,8 @@ input[type=button] {
 
 .features article {
   width: 63%;
-  margin: 15px 0; /* differs */
-  text-align: center; /* differs */
+  margin: 15px 0;
+  text-align: center;
 }
 
 .features .features-items {
@@ -355,7 +355,7 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.features i { /* differs */
+.features i {
   font-size: 4.5em;
   margin: 30px 0;
 
